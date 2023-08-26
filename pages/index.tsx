@@ -20,7 +20,7 @@ const Home = () => {
       <NextSeo
         title="Kytelink - the link for all your links"
         description="Kytelink is an opensource Linktree alternative that allows you to share all your links in one place. Add custom domains, view click statistics and more."
-        canonical="https://kytelink.com"
+        canonical="https://onelink12.vercel.app"
       />
 
       <VStack minH={{ base: '80vh', md: '95vh' }} justify="space-between" spacing={10}>

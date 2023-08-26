@@ -16,7 +16,7 @@ const ExampleKytes = () => {
 
     trackClientEvent({ event: PosthogEvents.CLICKED_EXAMPLE_KYTE, properties: { username } })
 
-    window.open('https://kytelink.com/' + username, '_blank')
+    window.open('https://onelink12.vercel.app/' + username, '_blank')
   }
 
   return (
@@ -33,7 +33,7 @@ const ExampleKytes = () => {
           transitionDuration="100ms"
           cursor="pointer"
           as="a"
-          href={'https://kytelink.com/' + image.username}
+          href={'https://onelink12.vercel.app/' + image.username}
           onClick={(e) => handleKyteClick(e, image.username)}
         >
           <Image

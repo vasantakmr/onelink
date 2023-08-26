@@ -6,7 +6,7 @@ a decluttered, open source, and free alternative to linktree
 
 #### Kyte Hosted
 
-- Head to [kytelink.com](https://kytelink.com)
+- Head to [kytelink.com](https://onelink12.vercel.app)
 - Hit the `Get Started` button
 - Sign up with Github, Google, or Email
 - Follow the onboarding steps to create your first link
