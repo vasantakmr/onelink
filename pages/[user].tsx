@@ -11,8 +11,8 @@ const Kyte = (user: TUser) => {
   return (
     <>
       <NextSeo
-        title={`${user.name || user.username} | Kytelink`}
-        description={`Check out ${user.name || user.username}'s kyte to grab their links!`}
+        title={user.seoTitle || `${user.name || user.username} | Kytelink`}
+        description={user.seoDescription || `Check out ${user.name}'s kyte to grab their links!`}
         canonical={`https://onelink12.vercel.app/${user.username}`}
       />
       <User user={user} />
@@ -24,7 +24,7 @@ export default Kyte
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const start = Date.now()
-  if (context.query.user?.includes('edit'))
+  if (context.query.user === 'edit')
     return { redirect: { destination: '/edit/links', permanent: false } }
 
   const username = context.query.user?.toString().toLowerCase()

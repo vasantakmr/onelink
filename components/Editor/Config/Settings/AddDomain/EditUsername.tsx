@@ -1,7 +1,6 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useCallback, useEffect, useState } from 'react'
 
-import { VStack, Text, InputGroup, InputLeftAddon, Input, Box, useToast } from '@chakra-ui/react'
+import { VStack, Text, InputGroup, InputLeftAddon, Input, Box } from '@chakra-ui/react'
 import { debounce } from 'lodash'
 
 import { TUser } from 'types/user'
@@ -81,10 +80,10 @@ const EditUsername = ({ user, setUser }: { user: TUser; setUser: (user: TUser) =
 
   return (
     <VStack pr={{ base: 0, md: '30%' }} align="left" spacing={2}>
-      <Text fontWeight="semibold">Kyte Username</Text>
+      <Text fontWeight="semibold">One Username</Text>
       <Box>
         <InputGroup size="sm">
-          <InputLeftAddon children="kytelink.com/" />
+          <InputLeftAddon children="Onelink.com/" />
           <Input
             _hover={{
               bg: 'gray.100',

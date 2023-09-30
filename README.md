@@ -1,19 +1,19 @@
-# kytelink 🪁
+# onelink 🪁
 
 a decluttered, open source, and free alternative to linktree
 
 ## 🚀 Getting Started
 
-#### Kyte Hosted
+#### our Hosted
 
-- Head to [kytelink.com](https://onelink12.vercel.app)
+- Head to [onelink12.com](https://onelink12.vercel.app)
 - Hit the `Get Started` button
 - Sign up with Github, Google, or Email
 - Follow the onboarding steps to create your first link
 
 #### Self Hosted
 
-- Clone the [kytelink repo](httsp://github.com/aleemrehmtulla/kytelink) and run `npm install`
+- Clone the [onelink repo](httsp://github.com/vasantakmr/onelink) and run `npm install`
 - Follow the `.env.example` file to create your own `.env` file
 - Set up your database by running `npx prisma migrate dev --name init` and `npx prisma generate`
 - Run `npm run dev` to start the development server
@@ -40,12 +40,12 @@ When setting it up, all environment variables are optional at build-time, but re
 
 ## ✨ Developer Notes
 
-- You'll occasionally notice VCF references in the codebase. Kytelink used to support adding contact cards that would allow anyone to import your contact information into their phone. This feature has been removed to reduce third-party dependencies, now we only need a database and cloudflare images!
+- You'll occasionally notice VCF references in the codebase. onelink12 used to support adding contact cards that would allow anyone to import your contact information into their phone. This feature has been removed to reduce third-party dependencies, now we only need a database and cloudflare images!
 - There may be some wack code througout, feel free to open a PR to fix it! I originally started this project as a way to learn Next, but as it grew I figured it would be fun to fix it up and opensource:)
-- If you have any questions, feel free to reach out to me on [Twitter](https://twitter.com/aleemrehmtulla) 🍉
+- If you have any questions, feel free to reach out to me on [Twitter](https://twitter.com/vasantakmr) 🍉
 
 <br />
 
-**kytelink is completely free for all features**
+**onelink is completely free for all features**
 
 **if you end up using it, consider tossing a star ⭐**

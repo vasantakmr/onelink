@@ -55,12 +55,7 @@ const EditLinkModal = ({
   handleClose,
 }: EditLinkModalProps) => {
   const toast = useToast()
-  const obj = {
-    link,
-    title,
-    emoji,
-    color,
-  }
+  const obj = { link, title, emoji, color }
 
   const isEmoji = emoji?.includes('Fa')
 
@@ -108,9 +103,7 @@ const EditLinkModal = ({
 
   const updateLink = () => {
     const newLinks = user.links.map((link: any) => {
-      if (link.link === selectedLink.link) {
-        return obj
-      }
+      if (link.link === selectedLink.link) return obj
       return link
     })
     setUser({ ...user, links: newLinks })
@@ -131,6 +124,10 @@ const EditLinkModal = ({
         <HStack mb={isEdit ? 0 : 6}>
           <VStack mr={6}>
             <Input
+              _focus={{
+                bg: 'gray.100',
+                borderColor: 'gray.500',
+              }}
               onChange={(e) => setTitle(e.target.value)}
               placeholder="Link Title"
               value={title}
@@ -145,6 +142,10 @@ const EditLinkModal = ({
               }}
             />
             <Input
+              _focus={{
+                bg: 'gray.100',
+                borderColor: 'gray.500',
+              }}
               w="full"
               onChange={(e) => setLink(e.target.value)}
               placeholder="Link URL"

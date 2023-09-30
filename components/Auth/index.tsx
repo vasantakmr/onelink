@@ -129,15 +129,11 @@ const AuthComponent = ({ isLogin }: { isLogin: boolean }) => {
           </Box>
           <VStack spacing={1} align="left">
             <Heading fontSize={{ base: '3xl', md: '4xl' }} color="black">
-              {isLogin ? 'Log in to Kytelink' : 'Create a Kytelink'}
+              {isLogin ? 'Log in to Onelink' : 'Create a Onelink'}
             </Heading>
             <Text fontSize={{ base: 'lg', md: 'lg' }} color="gray.600">
               {isLogin ? "Don't have an account? " : 'Already have an account? '}
-              <Link
-                href={isLogin ? '/signup' : '/login'}
-                color="blue.500"
-                _focus={{ outline: 'none' }}
-              >
+              <Link href={isLogin ? '/signup' : '/login'} color="blue.500">
                 {isLogin ? 'Create one' : 'Log in'}
               </Link>
             </Text>
@@ -165,7 +161,6 @@ const AuthComponent = ({ isLogin }: { isLogin: boolean }) => {
               textColor="white"
               _hover={isValid !== false && !emailLoading ? { opacity: 0.8 } : {}}
               _active={isValid !== false && !emailLoading ? { opacity: 0.5 } : {}}
-              _focus={{ outline: 'none' }}
               transition="0.3s"
               bg="purple.600"
               onClick={authEmail}
@@ -191,7 +186,6 @@ const AuthComponent = ({ isLogin }: { isLogin: boolean }) => {
                 w="full"
                 _hover={!googleLoading && !githubLoading ? { opacity: 0.8 } : {}}
                 _active={!googleLoading && !githubLoading ? { opacity: 0.5 } : {}}
-                _focus={{ outline: 'none' }}
                 onClick={() => authSocial(item.name.toLowerCase())}
                 isLoading={item.name.toLowerCase() === 'google' ? googleLoading : githubLoading}
               >
@@ -201,12 +195,12 @@ const AuthComponent = ({ isLogin }: { isLogin: boolean }) => {
             ))}
           </VStack>
           <Text fontSize="sm" color="gray.500">
-            By continuing, you agree to Kytelink's{' '}
-            <Link href="/tos.pdf" color="blue.500" _focus={{ outline: 'none' }}>
+            By continuing, you agree to Onelink's{' '}
+            <Link href="/tos.pdf" color="blue.500">
               Terms of Service
             </Link>{' '}
             and{' '}
-            <Link href="/privacy.pdf" color="blue.500" _focus={{ outline: 'none' }}>
+            <Link href="/privacy.pdf" color="blue.500">
               Privacy Policy
             </Link>
             .

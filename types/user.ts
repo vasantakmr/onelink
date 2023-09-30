@@ -13,6 +13,8 @@ export type TUser = {
   theme: string
   customFont?: string
   customColor?: string
+  seoTitle?: string
+  seoDescription?: string
   redirectLink?: string
   shouldRedirect?: boolean
   links: TLink[]
@@ -24,7 +26,7 @@ export type TUser = {
 }
 export type TLink = {
   color?: string
-  emoji: string
+  emoji?: string
   link: string
   title: string
   isPreview?: boolean
@@ -39,13 +41,13 @@ export type TIcon = {
 
 export type FaIconKey = keyof typeof icons
 
-export type UserContextType = {
+export type TUserContext = {
   user: TUser | null
   setUser: React.Dispatch<React.SetStateAction<TUser | null>>
 }
-export type TPublishedKyteContext = {
-  publishedKyte: TUser | null
-  setPublishedKyte: React.Dispatch<React.SetStateAction<TUser | null>>
+export type TKyteProdContext = {
+  kyteProd: TUser | null
+  setKyteProd: React.Dispatch<React.SetStateAction<TUser | null>>
 }
 
 export type Vcf = {
